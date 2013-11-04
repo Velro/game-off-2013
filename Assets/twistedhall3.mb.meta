@@ -88,11 +88,13 @@ ModelImporter:
     2300004: pPlane4
     2300006: polySurface3
     2300008: polySurface4
+    2300010: //RootNode
     3300000: polySurface2
     3300002: pPlane3
     3300004: pPlane4
     3300006: polySurface3
     3300008: polySurface4
+    3300010: //RootNode
     4300000: polySurface2
     4300002: pPlane3
     4300004: pPlane4

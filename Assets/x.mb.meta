@@ -21,6 +21,9 @@ ModelImporter:
     100030: transform6
     100032: transform7
     100034: //RootNode
+    100036: group2
+    100038: pasted__group1
+    100040: pasted__pasted__pCube2
     400000: group
     400002: group1
     400004: pasted__pCube2
@@ -39,9 +42,18 @@ ModelImporter:
     400030: transform6
     400032: transform7
     400034: //RootNode
+    400036: group2
+    400038: pasted__group1
+    400040: pasted__pasted__pCube2
     2300000: polySurface2
+    2300002: pasted__pasted__pCube2
+    2300004: pasted__pCube2
     3300000: polySurface2
+    3300002: pasted__pasted__pCube2
+    3300004: pasted__pCube2
     4300000: polySurface2
+    4300002: pasted__pCube2
+    4300004: pasted__pasted__pCube2
     9500000: //RootNode
   materials:
     importMaterials: 1
