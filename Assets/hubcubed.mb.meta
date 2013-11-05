@@ -73,6 +73,19 @@ ModelImporter:
     100134: transform15
     100136: transform16
     100138: transform17
+    100140: group13
+    100142: pasted__pPlane4
+    100144: polySurface3
+    100146: pPlane3
+    100148: pPlane4
+    100150: pPlane5
+    100152: pPlane6
+    100154: transform18
+    100156: transform19
+    100158: transform20
+    100160: transform21
+    100162: transform22
+    100164: transform23
     400000: group
     400002: group1
     400004: group2
@@ -143,12 +156,28 @@ ModelImporter:
     400134: transform15
     400136: transform16
     400138: transform17
+    400140: group13
+    400142: pasted__pPlane4
+    400144: polySurface3
+    400146: pPlane3
+    400148: pPlane4
+    400150: pPlane5
+    400152: pPlane6
+    400154: transform18
+    400156: transform19
+    400158: transform20
+    400160: transform21
+    400162: transform22
+    400164: transform23
     2300000: polySurface1
     2300002: polySurface2
+    2300004: polySurface3
     3300000: polySurface1
     3300002: polySurface2
+    3300004: polySurface3
     4300000: polySurface1
     4300002: polySurface2
+    4300004: polySurface3
     9500000: //RootNode
   materials:
     importMaterials: 1
