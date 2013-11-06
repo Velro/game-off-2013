@@ -44,12 +44,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CharacterMotor.js" />
-     <Compile Include="Assets\DoorSwingA.js" />
-     <Compile Include="Assets\DoorSwingB.js" />
-     <Compile Include="Assets\FP Controller.js" />
-     <Compile Include="Assets\TeleportPlayer.js" />
-     <Compile Include="Assets\TwistedHallGravity.js" />
+     <Compile Include="Assets\DelayedActivate.js" />
+     <Compile Include="Assets\Scripts\CharacterMotor.js" />
+     <Compile Include="Assets\Scripts\DoorSwingA.js" />
+     <Compile Include="Assets\Scripts\DoorSwingB.js" />
+     <Compile Include="Assets\Scripts\FP Controller.js" />
+     <Compile Include="Assets\Scripts\TeleportPlayer.js" />
+     <Compile Include="Assets\Scripts\TwistedHallGravity.js" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
