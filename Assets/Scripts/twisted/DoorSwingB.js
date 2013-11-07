@@ -18,7 +18,7 @@ function Update () {
 	}
 	
 	if (exited){
-		if (Mathf.Abs(childDoor.localEulerAngles.y) < 90){
+		if (Mathf.Abs(childDoor.localEulerAngles.y) >270 || Mathf.Abs(childDoor.localEulerAngles.y) < 90){
 			var reverseRotateAmount : float;
 			reverseRotateAmount = 60 * Time.deltaTime;
 			childDoor.Rotate(Vector3.up, reverseRotateAmount);
