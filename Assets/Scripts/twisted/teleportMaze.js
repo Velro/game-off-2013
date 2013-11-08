@@ -4,8 +4,7 @@ var mazeDoorA : Transform;
 var lookAt : Transform;
 
 function OnTriggerEnter (player : Collider){
-	mazeDoorA.position.z += 1;
-	player.transform.position = mazeDoorA.TransformPoint(Vector3(0,1,0));
+	player.transform.position = mazeDoorA.TransformPoint(Vector3.zero);
 	player.transform.LookAt(lookAt);
 	if (transform.parent.parent == GameObject.Find("hubcubedA").transform){
 		Debug.Log("teleported from A");
