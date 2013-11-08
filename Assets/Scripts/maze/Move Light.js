@@ -1,11 +1,11 @@
 ﻿#pragma strict
 
 var speed : float = 0;
-var location1 : Vector3 = Vector3.zero;
-var location2 : Vector3 = Vector3.zero;
-var location3 : Vector3 = Vector3.zero;
-var location4 : Vector3 = Vector3.zero;
-var location5 : Vector3 = Vector3.zero;
+var location1 : Transform;
+var location2 : Transform;
+var location3 : Transform;
+var location4 : Transform;
+var location5 : Transform;
 
 @System.NonSerialized
 var origin : Vector3 = Vector3.zero;
@@ -37,19 +37,18 @@ var bool1 : boolean = true;
 var bool2 : boolean = false;
 @System.NonSerialized
 var bool3 : boolean = false;
-//@System.NonSerialized
+@System.NonSerialized
 var bool4 : boolean = false;
-//@System.NonSerialized
+@System.NonSerialized
 var bool5 : boolean = false;
 
 function Start () {
 	origin = transform.position;
-	
-	journeyLength1 = Vector3.Distance(origin, location1);
-	journeyLength2 = Vector3.Distance(location1, location2);
-	journeyLength3 = Vector3.Distance(location2, location3);
-	journeyLength4 = Vector3.Distance(location3, location4);
-	journeyLength5 = Vector3.Distance(location4, location5);
+	journeyLength1 = Vector3.Distance(origin, location1.position);
+	journeyLength2 = Vector3.Distance(location1.position, location2.position);
+	journeyLength3 = Vector3.Distance(location2.position, location3.position);
+	journeyLength4 = Vector3.Distance(location3.position, location4.position);
+	journeyLength5 = Vector3.Distance(location4.position, location5.position);
 }
 
 function Update () {
@@ -60,8 +59,8 @@ function Update () {
 		if (bool1 == true){
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered/journeyLength1;
-			transform.position = Vector3.Lerp(origin, location1, fracJourney);
-			if (transform.position == location1){
+			transform.position = Vector3.Lerp(origin, location1.position, fracJourney);
+			if (transform.position == location1.position){
 				bool1 = false;
 				bool2 = true;
 				startTime = Time.time;
@@ -70,8 +69,8 @@ function Update () {
 		if (bool2 == true){
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered/journeyLength2;
-			transform.position = Vector3.Lerp(location1, location2, fracJourney);
-			if (transform.position == location2){
+			transform.position = Vector3.Lerp(location1.position, location2.position, fracJourney);
+			if (transform.position == location2.position){
 				bool2 = false;
 				bool3 = true;
 				startTime = Time.time;
@@ -80,8 +79,8 @@ function Update () {
 		if (bool3 == true){
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered/journeyLength3;
-			transform.position = Vector3.Lerp(location2, location3, fracJourney);
-			if (transform.position == location3){
+			transform.position = Vector3.Lerp(location2.position, location3.position, fracJourney);
+			if (transform.position == location3.position){
 				bool3 = false;
 				bool4 = true;
 				startTime = Time.time;
@@ -90,8 +89,8 @@ function Update () {
 		if (bool4 == true){
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered/journeyLength4;
-			transform.position = Vector3.Lerp(location3, location4, fracJourney);
-			if (transform.position == location4){
+			transform.position = Vector3.Lerp(location3.position, location4.position, fracJourney);
+			if (transform.position == location4.position){
 				bool4 = false;
 				bool5 = true;
 				startTime = Time.time;
@@ -100,9 +99,9 @@ function Update () {
 		if (bool5 == true){
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered/journeyLength5;
-			transform.position = Vector3.Lerp(location4, location5, fracJourney);
-			if (transform.position == location5){
-				bool5 = false;
+			transform.position = Vector3.Lerp(location4.position, location5.position, fracJourney);
+			if (transform.position == location5.position){
+				//bool5 = false;
 				//bool5 = true;
 				//startTime = Time.time;
 			}

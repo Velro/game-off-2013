@@ -1,25 +1,24 @@
 ﻿#pragma strict
 
 var mazeDoorA : Transform;
+var lookAt : Transform;
 
-@System.NonSerialized
-var twistedDoorCollider : Transform;
-
-function Start () {
-	twistedDoorCollider = transform;
+function OnTriggerEnter (player : Collider){
+	mazeDoorA.position.z += 1;
+	player.transform.position = mazeDoorA.TransformPoint(Vector3(0,1,0));
+	player.transform.LookAt(lookAt);
+	if (transform.parent.parent == GameObject.Find("hubcubedA").transform){
+		Debug.Log("teleported from A");
+	}
+	if (transform.parent.parent == GameObject.Find("hubcubedB").transform){
+		RevertRotation();
+	}
 }
 
-function Update () {
-
-}
-
-function OnTriggerEnter(other : Collider) {
-	if (CheckForX(transform) == true)Debug.Log("WINRAR");
-}
-
-function CheckForX (twistedDoor : Transform){
-	var bool = false;
-	var doorB = twistedDoor.transform.Find("doorB");
-	if  (doorB.transform.Find("x") != null)bool = true;
-	return bool;
+function RevertRotation () {
+	yield WaitForSeconds (5);
+	var rotate = GameObject.Find("rotate");
+	rotate.transform.rotation.eulerAngles.x = 0;
+	rotate.transform.rotation.eulerAngles.y = 0;
+	rotate.transform.rotation.eulerAngles.z = 0;
 }
