@@ -86,6 +86,108 @@ ModelImporter:
     100160: transform21
     100162: transform22
     100164: transform23
+    100166: group14
+    100168: group15
+    100170: group16
+    100172: group17
+    100174: pasted__group10 1
+    100176: pasted__group10 2
+    100178: pasted__group11
+    100180: pasted__group11 1
+    100182: pasted__group11 2
+    100184: pasted__group13
+    100186: pasted__group13 1
+    100188: pasted__group13 2
+    100190: pasted__pasted__polySurface4
+    100192: pasted__pasted__polySurface4 1
+    100194: pasted__pasted__polySurface4 2
+    100196: pasted__pasted__pPlane2
+    100198: pasted__pasted__pPlane2 1
+    100200: pasted__pasted__pPlane2 2
+    100202: pasted__pasted__pPlane3
+    100204: pasted__pasted__pPlane3 1
+    100206: pasted__pasted__pPlane3 2
+    100208: pasted__pasted__pPlane4
+    100210: pasted__pasted__pPlane4 1
+    100212: pasted__pasted__pPlane4 2
+    100214: pasted__pasted__pPlane5
+    100216: pasted__pasted__pPlane5 1
+    100218: pasted__pasted__pPlane5 2
+    100220: pasted__pasted__pPlane8
+    100222: pasted__pasted__pPlane8 1
+    100224: pasted__pasted__pPlane8 2
+    100226: pasted__pasted__transform11
+    100228: pasted__pasted__transform11 1
+    100230: pasted__pasted__transform11 2
+    100232: pasted__pasted__transform12
+    100234: pasted__pasted__transform12 1
+    100236: pasted__pasted__transform12 2
+    100238: pasted__pasted__transform13
+    100240: pasted__pasted__transform13 1
+    100242: pasted__pasted__transform13 2
+    100244: pasted__polySurface4
+    100246: pasted__polySurface4 1
+    100248: pasted__polySurface4 2
+    100250: pasted__polySurface4 3
+    100252: pasted__polySurface5
+    100254: pasted__polySurface5 1
+    100256: pasted__polySurface5 2
+    100258: pasted__pPlane2 1
+    100260: pasted__pPlane2 2
+    100262: pasted__pPlane2 3
+    100264: pasted__pPlane3
+    100266: pasted__pPlane3 1
+    100268: pasted__pPlane3 2
+    100270: pasted__pPlane3 3
+    100272: pasted__pPlane4 1
+    100274: pasted__pPlane4 2
+    100276: pasted__pPlane4 3
+    100278: pasted__pPlane5
+    100280: pasted__pPlane5 1
+    100282: pasted__pPlane5 2
+    100284: pasted__pPlane5 3
+    100286: pasted__pPlane8
+    100288: pasted__pPlane8 1
+    100290: pasted__pPlane8 2
+    100292: pasted__pPlane8 3
+    100294: pasted__pPlane9
+    100296: pasted__transform11
+    100298: pasted__transform11 1
+    100300: pasted__transform11 2
+    100302: pasted__transform11 3
+    100304: pasted__transform12
+    100306: pasted__transform12 1
+    100308: pasted__transform12 2
+    100310: pasted__transform12 3
+    100312: pasted__transform13
+    100314: pasted__transform13 1
+    100316: pasted__transform13 2
+    100318: pasted__transform13 3
+    100320: pasted__transform14
+    100322: pasted__transform14 1
+    100324: pasted__transform14 2
+    100326: pasted__transform15
+    100328: pasted__transform15 1
+    100330: pasted__transform15 2
+    100332: pasted__transform16
+    100334: pasted__transform16 1
+    100336: pasted__transform16 2
+    100338: pasted__transform17
+    100340: pasted__transform17 1
+    100342: pasted__transform17 2
+    100344: pasted__transform18
+    100346: pasted__transform18 1
+    100348: pasted__transform18 2
+    100350: pasted__transform19
+    100352: pasted__transform19 1
+    100354: pasted__transform19 2
+    100356: polySurface4
+    100358: polySurface5
+    100360: polySurface6
+    100362: pPlane8
+    100364: pPlane9
+    100366: transform24
+    100368: transform25
     400000: group
     400002: group1
     400004: group2
@@ -169,19 +271,124 @@ ModelImporter:
     400160: transform21
     400162: transform22
     400164: transform23
+    400166: group14
+    400168: group15
+    400170: group16
+    400172: group17
+    400174: pasted__group10 1
+    400176: pasted__group10 2
+    400178: pasted__group11
+    400180: pasted__group11 1
+    400182: pasted__group11 2
+    400184: pasted__group13
+    400186: pasted__group13 1
+    400188: pasted__group13 2
+    400190: pasted__pasted__polySurface4
+    400192: pasted__pasted__polySurface4 1
+    400194: pasted__pasted__polySurface4 2
+    400196: pasted__pasted__pPlane2
+    400198: pasted__pasted__pPlane2 1
+    400200: pasted__pasted__pPlane2 2
+    400202: pasted__pasted__pPlane3
+    400204: pasted__pasted__pPlane3 1
+    400206: pasted__pasted__pPlane3 2
+    400208: pasted__pasted__pPlane4
+    400210: pasted__pasted__pPlane4 1
+    400212: pasted__pasted__pPlane4 2
+    400214: pasted__pasted__pPlane5
+    400216: pasted__pasted__pPlane5 1
+    400218: pasted__pasted__pPlane5 2
+    400220: pasted__pasted__pPlane8
+    400222: pasted__pasted__pPlane8 1
+    400224: pasted__pasted__pPlane8 2
+    400226: pasted__pasted__transform11
+    400228: pasted__pasted__transform11 1
+    400230: pasted__pasted__transform11 2
+    400232: pasted__pasted__transform12
+    400234: pasted__pasted__transform12 1
+    400236: pasted__pasted__transform12 2
+    400238: pasted__pasted__transform13
+    400240: pasted__pasted__transform13 1
+    400242: pasted__pasted__transform13 2
+    400244: pasted__polySurface4
+    400246: pasted__polySurface4 1
+    400248: pasted__polySurface4 2
+    400250: pasted__polySurface4 3
+    400252: pasted__polySurface5
+    400254: pasted__polySurface5 1
+    400256: pasted__polySurface5 2
+    400258: pasted__pPlane2 1
+    400260: pasted__pPlane2 2
+    400262: pasted__pPlane2 3
+    400264: pasted__pPlane3
+    400266: pasted__pPlane3 1
+    400268: pasted__pPlane3 2
+    400270: pasted__pPlane3 3
+    400272: pasted__pPlane4 1
+    400274: pasted__pPlane4 2
+    400276: pasted__pPlane4 3
+    400278: pasted__pPlane5
+    400280: pasted__pPlane5 1
+    400282: pasted__pPlane5 2
+    400284: pasted__pPlane5 3
+    400286: pasted__pPlane8
+    400288: pasted__pPlane8 1
+    400290: pasted__pPlane8 2
+    400292: pasted__pPlane8 3
+    400294: pasted__pPlane9
+    400296: pasted__transform11
+    400298: pasted__transform11 1
+    400300: pasted__transform11 2
+    400302: pasted__transform11 3
+    400304: pasted__transform12
+    400306: pasted__transform12 1
+    400308: pasted__transform12 2
+    400310: pasted__transform12 3
+    400312: pasted__transform13
+    400314: pasted__transform13 1
+    400316: pasted__transform13 2
+    400318: pasted__transform13 3
+    400320: pasted__transform14
+    400322: pasted__transform14 1
+    400324: pasted__transform14 2
+    400326: pasted__transform15
+    400328: pasted__transform15 1
+    400330: pasted__transform15 2
+    400332: pasted__transform16
+    400334: pasted__transform16 1
+    400336: pasted__transform16 2
+    400338: pasted__transform17
+    400340: pasted__transform17 1
+    400342: pasted__transform17 2
+    400344: pasted__transform18
+    400346: pasted__transform18 1
+    400348: pasted__transform18 2
+    400350: pasted__transform19
+    400352: pasted__transform19 1
+    400354: pasted__transform19 2
+    400356: polySurface4
+    400358: polySurface5
+    400360: polySurface6
+    400362: pPlane8
+    400364: pPlane9
+    400366: transform24
+    400368: transform25
     2300000: polySurface1
     2300002: polySurface2
     2300004: polySurface3
+    2300006: polySurface6
     3300000: polySurface1
     3300002: polySurface2
     3300004: polySurface3
+    3300006: polySurface6
     4300000: polySurface1
     4300002: polySurface2
     4300004: polySurface3
+    4300006: polySurface6
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4

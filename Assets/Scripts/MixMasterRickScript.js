@@ -20,7 +20,7 @@ function OnTriggerEnter(other : Collider) {
 		Debug.Log(meatspace.volume);
 	}
 	
-	if ( other.trasnform.isChild(transform) && other.name == "B"){
+	if ( other.transform.IsChildOf(transform) && other.name == "B"){
 		
 	}
 }
