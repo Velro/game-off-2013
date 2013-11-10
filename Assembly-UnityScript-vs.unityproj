@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\maze\LightFade.js" />
      <Compile Include="Assets\Scripts\maze\LightFade2.js" />
      <Compile Include="Assets\Scripts\maze\Move Light.js" />
+     <Compile Include="Assets\Scripts\maze\PlayAudioOnHit.js" />
      <Compile Include="Assets\Scripts\maze\TeleportPlayer.js" />
      <Compile Include="Assets\Scripts\twisted\CheckForXDoorSwing.js" />
      <Compile Include="Assets\Scripts\twisted\DelayedActivate.js" />
