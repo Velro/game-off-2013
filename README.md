@@ -4,13 +4,15 @@ A first person exploration and puzzle game which focuses on creating spaces that
 
 ## Tools
 
-Unity (Free)
-Maya (Student)
-GIMP 2
-Reason
+<ul>
+  <li>Unity (Free)</li>
+  <li>Maya (Student)</li>
+  <li>GIMP 2</li>
+  <li>Reason</li>
+</ul>
 
 ## Team
 
-James Fulop - Design, Programming, Modelling
-Eric Nethery - Sound, Design
+James Fulop - Design, Programming, Modelling<br>
+Eric Nethery - Sound, Design<br>
 Zach Chelbi - Additional Modelling
