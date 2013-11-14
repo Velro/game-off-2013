@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\maze\Move Light.js" />
      <Compile Include="Assets\Scripts\maze\PlayAudioOnHit.js" />
      <Compile Include="Assets\Scripts\maze\TeleportPlayer.js" />
+     <Compile Include="Assets\Scripts\maze\destroyWall.js" />
      <Compile Include="Assets\Scripts\twisted\CheckForXDoorSwing.js" />
      <Compile Include="Assets\Scripts\twisted\DelayedActivate.js" />
      <Compile Include="Assets\Scripts\twisted\DeleteX.js" />
@@ -59,7 +60,6 @@
      <Compile Include="Assets\Scripts\twisted\DoorSwingB.js" />
      <Compile Include="Assets\Scripts\twisted\TwistedHallGravity.js" />
      <Compile Include="Assets\Scripts\twisted\teleportMaze.js" />
-     <Compile Include="Assets\destroyWall.js" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
