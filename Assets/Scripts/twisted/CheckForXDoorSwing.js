@@ -19,8 +19,9 @@ function Update () {
 			childDoor.Rotate(Vector3.up, rotateAmount);
 		}
 	}
+	
 	if (exited){
-		if (Mathf.Abs(childDoor.localEulerAngles.y) > 270 || Mathf.Abs(childDoor.localEulerAngles.y) < 90){
+		if (Mathf.Abs(childDoor.localEulerAngles.y) < 90){
 			var reverseRotateAmount : float;
 			reverseRotateAmount = 60 * Time.deltaTime;
 			childDoor.Rotate(Vector3.up, reverseRotateAmount);
@@ -40,7 +41,6 @@ function OnTriggerExit(other : Collider) {
 
 function CheckForX (twistedDoor : Transform){
 	var bool = false;
-	var doorB = twistedDoor.transform.Find("doorB");
-	if  (doorB.transform.Find("x") == null)bool = true;
+	if  (childDoor.Find("x") == null)bool = true;
 	return bool;
 }

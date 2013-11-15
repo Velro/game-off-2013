@@ -10,12 +10,10 @@ function Start () {
 
 function Update () {
 	if (entered){
-
 		if (Mathf.Abs(childDoor.localEulerAngles.y) > 1){
 			var rotateAmount : float;
 			rotateAmount = -60 * Time.deltaTime;
 			childDoor.Rotate(Vector3.up, rotateAmount);
-			
 		}
 	}
 	
