@@ -5,7 +5,7 @@ var exited : boolean = false;
 var childDoor : Transform;
 
 function Start () {
-	childDoor = transform.GetChild(0);
+	childDoor = transform.Find("door");
 }
 
 function Update () {
