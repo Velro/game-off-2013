@@ -25,7 +25,6 @@ function Update () {
 	if (exited){
 		var reverseRotateAmount : float;
 		var differenceAngle = Mathf.DeltaAngle(startingAngle, boolAngle);
-		Debug.Log(Mathf.Abs(differenceAngle));
 		var delta = Mathf.Abs(Mathf.DeltaAngle(startingAngle, childDoor.localEulerAngles.y));
 		if (delta <=Mathf.Abs(differenceAngle) && (delta >= 1)){
 			reverseRotateAmount = 60 * Time.deltaTime;
