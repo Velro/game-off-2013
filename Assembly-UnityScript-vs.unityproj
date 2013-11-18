@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MixMasterRickScript.js" />
+     <Compile Include="Assets\Scripts\OnClickMove.js" />
      <Compile Include="Assets\Scripts\character\CharacterMotor.js" />
      <Compile Include="Assets\Scripts\character\FP Controller.js" />
      <Compile Include="Assets\Scripts\maze\LightFade.js" />

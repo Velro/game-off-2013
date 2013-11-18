@@ -34,13 +34,13 @@ function Update () {
 }
 
 function OnTriggerEnter(other : Collider) {
-	if (CheckForX(transform) == true)entered = true;
+	if (CheckForX(transform) == true && other.gameObject.tag == "Player")entered = true;
 	exited = false;
 	//boolAngle = childDoor.localEulerAngles.y;
 }
 
 function OnTriggerExit(other : Collider) {
-	entered = false;
+	if (other.gameObject.tag == "Player")entered = false;
 	exited = true;
 	boolAngle = childDoor.localEulerAngles.y;
 }
