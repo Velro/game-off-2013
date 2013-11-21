@@ -29,7 +29,8 @@ function Update () {
 
 function OnMouseDown () {
 	if (Vector3.Distance(transform.position, player.transform.position) < clickableDistance && Time.time - timeA > timeDelay
-			&& transform.parent != player){
+			&& transform.parent != player && transform.Find("pottedplant") == null && transform.Find("TableSmall") == null
+			&& transform.Find("wateringcan") == null && transform.Find("flower") == null && transform.Find ("emptypot") == null){
 		transform.parent = player.transform;
 		var ray : Ray;
 		ray.origin = player.transform.position;

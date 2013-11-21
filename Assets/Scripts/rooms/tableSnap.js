@@ -34,7 +34,7 @@ function OnTriggerEnter(other : Collider){
 	if (other.name == "PottedPlant" && tableThere == true) {
 		other.transform.parent = transform;
 		other.transform.localPosition = potPos;
-		other.transform.rotation.eulerAngles = Vector3(270, 0, 0);
+		other.transform.rotation.eulerAngles = Vector3.zero;
 		
 		rigidbody = other.GetComponent("Rigidbody");
 		rigidbody.useGravity = false;
@@ -58,7 +58,7 @@ function OnTriggerEnter(other : Collider){
 	if (other.name == "wateringcan" && potThere == true){
 		other.transform.parent = transform;
 		other.transform.localPosition = canPos;
-		other.transform.rotation = Quaternion.identity;
+		other.transform.rotation.eulerAngles = Vector3(0,270,0);
 		
 		rigidbody = other.GetComponent("Rigidbody");
 		rigidbody.useGravity = false;
