@@ -7,6 +7,9 @@ var size : float = 0;
 @System.NonSerializedAttribute
 var whites : GameObject[];
 
+var breakEffect : GameObject;
+var breakingGlassSound : GameObject;
+
 var white1 : GameObject;
 var white2 : GameObject;
 var white3 : GameObject;
@@ -30,10 +33,18 @@ function OnTriggerEnter (other : Collider) {
 	timeA = Time.timeSinceLevelLoad;	
 	if (size == 7){
 		for (var i = 0; i < whites.length; i++){
+			yield WaitForSeconds (delay);
 			Destroy(whites[i], delay);
 		}
 	}
-	Destroy(transform.gameObject, delay + 0.5);
+	yield WaitForSeconds(delay);
+	Destroy(transform.gameObject);
+	var particleClone;
+	var soundClone;
+	particleClone = Instantiate (breakEffect, transform.position, transform.rotation);
+	soundClone = Instantiate (breakingGlassSound, transform.position, transform.rotation);
+	Destroy (particleClone, 8);
+	Destroy (soundClone, 8);
 }
 
 function OnTriggerExit (other: Collider) {

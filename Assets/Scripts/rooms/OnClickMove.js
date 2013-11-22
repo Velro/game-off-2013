@@ -10,9 +10,14 @@ var xAngle : float;
 var yAngle : float;
 var zAngle : float;
 
+@System.NonSerializedAttribute
+var originalPosition : Vector3;
+var originalRotation : Vector3;
 function Start () {
 	//player = GameObject.FindGameObjectWithTag("Player");
 	timeA = Time.time;
+	originalPosition = transform.position;
+	originalRotation = transform.rotation.eulerAngles;
 }
 
 function Update () {
@@ -24,7 +29,10 @@ function Update () {
 		transform.rotation.eulerAngles.y = yAngle;
 		transform.rotation.eulerAngles.z = zAngle;
 	}
-
+	if (transform.position.y < -5){  //bring the object back up if it clips through the floor
+		transform.position = originalPosition;
+		transform.rotation.eulerAngles = originalRotation;
+	}
 }
 
 function OnMouseDown () {

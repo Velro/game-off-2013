@@ -17,14 +17,15 @@ function Update () {
 	
 }
 
-function OnTriggerEnter () {
-
-	if (GameObject.Find("maze2(Clone)") != null){
-		Destroy (GameObject.Find("maze2(Clone)"));
+function OnTriggerEnter (other : Collider) {
+	if (other.name == "Player"){
+		Debug.Log(transform.name);
+		if (GameObject.Find("maze2(Clone)") != null){
+			Destroy (GameObject.Find("maze2(Clone)"));
+		}
+		if (GameObject.Find("maze2") != null) {
+			Destroy (GameObject.Find("maze2"));
+		}
+		Instantiate (prefabMaze, currentMazePosition, currentMazeRotation);
 	}
-	if (GameObject.Find("maze2") != null) {
-		Destroy (GameObject.Find("maze2"));
-	}
-	 Instantiate (prefabMaze, currentMazePosition, currentMazeRotation);
-	 
 }
