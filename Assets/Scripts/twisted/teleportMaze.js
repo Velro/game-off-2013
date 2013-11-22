@@ -3,19 +3,15 @@
 var mazeDoorA : Transform;
 var lookAt : Transform;
 
-function OnTriggerEnter (player : Collider){
-	player.transform.position = mazeDoorA.TransformPoint(Vector3.zero);
-	player.transform.LookAt(lookAt);
-	if (transform.parent.parent == GameObject.Find("hubcubedA").transform){
-		Debug.Log("teleported from A");
-	}
-	if (transform.parent.parent == GameObject.Find("hubcubedB").transform){
+function OnTriggerEnter (other : Collider){
+	if(other.name == "Player"){
+		other.transform.position = mazeDoorA.position;
+		other.transform.LookAt(lookAt.TransformPoint(Vector3.zero));
 		RevertRotation();
 	}
 }
 
 function RevertRotation () {
-	yield WaitForSeconds (5);
 	var rotate = GameObject.Find("rotate");
 	rotate.transform.rotation.eulerAngles.x = 0;
 	rotate.transform.rotation.eulerAngles.y = 0;

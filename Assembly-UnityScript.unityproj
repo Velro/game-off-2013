@@ -50,12 +50,12 @@
      <Compile Include="Assets\Scripts\MixMasterRickScript.js" />
      <Compile Include="Assets\Scripts\character\CharacterMotor.js" />
      <Compile Include="Assets\Scripts\character\FP Controller.js" />
+     <Compile Include="Assets\Scripts\character\TeleportPlayer.js" />
      <Compile Include="Assets\Scripts\maze\LightFade.js" />
      <Compile Include="Assets\Scripts\maze\LightFade2.js" />
      <Compile Include="Assets\Scripts\maze\Move Light.js" />
      <Compile Include="Assets\Scripts\maze\PlayAudioOnHit.js" />
      <Compile Include="Assets\Scripts\maze\RebuildMaze.js" />
-     <Compile Include="Assets\Scripts\maze\TeleportPlayer.js" />
      <Compile Include="Assets\Scripts\maze\destroyWall.js" />
      <Compile Include="Assets\Scripts\rooms\EmptyToFilledPot.js" />
      <Compile Include="Assets\Scripts\rooms\OnClickMove.js" />
