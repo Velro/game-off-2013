@@ -183,6 +183,10 @@ function Awake () {
 }
 
 private function UpdateFunction () {
+	if (Input.GetKeyDown("left shift")){
+		Debug.Log("sprinting2!");
+		maxForwardSpeed = 8;
+	}
 	// We copy the actual velocity into a temporary variable that we can manipulate.
 	var velocity : Vector3 = movement.velocity;
 	
@@ -313,6 +317,12 @@ private function UpdateFunction () {
 }
 
 function FixedUpdate () {
+	if (Input.GetKey("left shift")){
+		Debug.Log("sprinting1!");
+		maxForwardSpeed =8;
+	} else {
+		maxForwardSpeed = 4;
+	}
 	if (movingPlatform.enabled) {
 		if (movingPlatform.activePlatform != null) {
 			if (!movingPlatform.newPlatform) {
@@ -587,6 +597,7 @@ function SetVelocity (velocity : Vector3) {
 	movement.frameVelocity = Vector3.zero;
 	SendMessage("OnExternalVelocity");
 }
+
 
 
 
