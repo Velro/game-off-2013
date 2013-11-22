@@ -14,7 +14,6 @@ var zAngle : float;
 var originalPosition : Vector3;
 var originalRotation : Vector3;
 function Start () {
-	//player = GameObject.FindGameObjectWithTag("Player");
 	timeA = Time.time;
 	originalPosition = transform.position;
 	originalRotation = transform.rotation.eulerAngles;
@@ -32,6 +31,9 @@ function Update () {
 	if (transform.position.y < -5){  //bring the object back up if it clips through the floor
 		transform.position = originalPosition;
 		transform.rotation.eulerAngles = originalRotation;
+		if (transform.name == "pottedplant"){
+			transform.position = GameObject.Find("dirt").transform.position + Vector3(0.5,1,0.5);
+		}
 	}
 }
 
