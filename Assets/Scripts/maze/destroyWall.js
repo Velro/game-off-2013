@@ -44,8 +44,8 @@ function OnTriggerEnter (other : Collider) {
 		var soundClone;
 		particleClone = Instantiate (breakEffect, transform.position, transform.rotation);
 		soundClone = Instantiate (breakingGlassSound, transform.position, transform.rotation);
-		Destroy (particleClone, 8);
-		Destroy (soundClone, 8);
+		Destroy (particleClone, 4);
+		Destroy (soundClone, 4);
 	}
 }
 

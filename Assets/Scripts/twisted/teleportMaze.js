@@ -12,6 +12,7 @@ function OnTriggerEnter (other : Collider){
 }
 
 function RevertRotation () {
+	yield WaitForSeconds(2);
 	var rotate = GameObject.Find("rotate");
 	rotate.transform.rotation.eulerAngles.x = 0;
 	rotate.transform.rotation.eulerAngles.y = 0;
