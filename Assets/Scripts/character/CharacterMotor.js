@@ -7,6 +7,7 @@ var canControl : boolean = true;
 
 var useFixedUpdate : boolean = true;
 
+var sprintCoefficient : float = 2;
 // For the next variables, @System.NonSerialized tells Unity to not serialize the variable or show it in the inspector view.
 // Very handy for organization!
 
@@ -183,10 +184,6 @@ function Awake () {
 }
 
 private function UpdateFunction () {
-	if (Input.GetKeyDown("left shift")){
-		Debug.Log("sprinting2!");
-		maxForwardSpeed = 8;
-	}
 	// We copy the actual velocity into a temporary variable that we can manipulate.
 	var velocity : Vector3 = movement.velocity;
 	
@@ -317,12 +314,7 @@ private function UpdateFunction () {
 }
 
 function FixedUpdate () {
-	if (Input.GetKey("left shift")){
-		Debug.Log("sprinting1!");
-		maxForwardSpeed =8;
-	} else {
-		maxForwardSpeed = 4;
-	}
+	
 	if (movingPlatform.enabled) {
 		if (movingPlatform.activePlatform != null) {
 			if (!movingPlatform.newPlatform) {
@@ -356,7 +348,7 @@ private function ApplyInputVelocityChange (velocity : Vector3) {
 	
 	// Find desired velocity
 	var desiredVelocity : Vector3;
-	if (grounded && TooSteep() && !isTwistedHall) {
+	if (grounded && TooSteep()) {
 		// The direction we're sliding in
 		desiredVelocity = Vector3(groundNormal.x, 0, groundNormal.z).normalized;
 		// Find the input movement direction projected onto the sliding direction
@@ -396,6 +388,16 @@ private function ApplyInputVelocityChange (velocity : Vector3) {
 		// When going downhill, DO move down manually, as gravity is not enough on steep hills.
 		velocity.y = Mathf.Min(velocity.y, 0);
 	}
+	
+	if (Input.GetKey("left shift")){
+		velocity = transform.forward * sprintCoefficient;
+		maxForwardSpeed = 10;
+		maxGroundAcceleration = 20;
+	} else {
+		maxForwardSpeed = 4;
+		maxGroundAcceleration = 10;
+	}
+	
 	return velocity;
 }
 

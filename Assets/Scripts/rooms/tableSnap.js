@@ -55,7 +55,7 @@ function OnTriggerEnter(other : Collider){
 		flowerThere = true;
 	}
 	
-	if (other.name == "wateringcan" && potThere == true){
+	if (other.name == "wateringcan" && flowerThere == true){
 		other.transform.parent = transform;
 		other.transform.localPosition = canPos;
 		other.transform.rotation.eulerAngles = Vector3(0,270,0);
@@ -65,7 +65,8 @@ function OnTriggerEnter(other : Collider){
 		rigidbody.isKinematic = true;
 		other.GetComponent(OnClickMove).enabled = false;
 		
-		other.GetComponent (Animation).enabled = true;
+		var animator = other.GetComponent(Animation);
+		animator.Play("pour");
 	}
 	
 	
