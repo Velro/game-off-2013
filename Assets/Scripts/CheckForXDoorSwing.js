@@ -17,7 +17,7 @@ function Update () {
 	if (entered){
 		if (Mathf.Abs(childDoor.localEulerAngles.y) > 1 && (Mathf.Abs(childDoor.localEulerAngles.y)<=181)){
 			var rotateAmount : float;
-			rotateAmount = -60 * Time.deltaTime;
+			rotateAmount = -100 * Time.deltaTime;
 			childDoor.Rotate(Vector3.up, rotateAmount);
 		}
 	}
@@ -27,7 +27,7 @@ function Update () {
 		var differenceAngle = Mathf.DeltaAngle(startingAngle, boolAngle);
 		var delta = Mathf.Abs(Mathf.DeltaAngle(startingAngle, childDoor.localEulerAngles.y));
 		if (delta <=Mathf.Abs(differenceAngle) && (delta >= 1)){
-			reverseRotateAmount = 60 * Time.deltaTime;
+			reverseRotateAmount = 100 * Time.deltaTime;
 			childDoor.Rotate(Vector3.up, reverseRotateAmount);
 		}
 	}
@@ -36,7 +36,6 @@ function Update () {
 function OnTriggerEnter(other : Collider) {
 	if (CheckForX(transform) == true && other.gameObject.tag == "Player")entered = true;
 	exited = false;
-	//boolAngle = childDoor.localEulerAngles.y;
 }
 
 function OnTriggerExit(other : Collider) {

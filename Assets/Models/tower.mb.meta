@@ -1336,6 +1336,11 @@ ModelImporter:
     102660: Camera
     102662: Cylinder
     102664: Lamp
+    102666: pasted__pCylinder4
+    102668: pPipe6
+    102670: pPlane1
+    102672: pPlane2
+    102674: pPlane3
     400000: group
     400002: pasted__pCylinder1
     400004: pCylinder1
@@ -2669,6 +2674,11 @@ ModelImporter:
     402660: Camera
     402662: Cylinder
     402664: Lamp
+    402666: pasted__pCylinder4
+    402668: pPipe6
+    402670: pPlane1
+    402672: pPlane2
+    402674: pPlane3
     2300000: polySurface2
     2300002: door:polySurface2
     2300004: pCylinder3
@@ -2692,6 +2702,11 @@ ModelImporter:
     2300040: pPipe5
     2300042: pasted__pCylinder3
     2300044: Cylinder
+    2300046: pasted__pCylinder4
+    2300048: pPipe6
+    2300050: pPlane1
+    2300052: pPlane2
+    2300054: pPlane3
     3300000: polySurface2
     3300002: door:polySurface2
     3300004: pCylinder3
@@ -2715,6 +2730,11 @@ ModelImporter:
     3300040: pPipe5
     3300042: pasted__pCylinder3
     3300044: Cylinder
+    3300046: pasted__pCylinder4
+    3300048: pPipe6
+    3300050: pPlane1
+    3300052: pPlane2
+    3300054: pPlane3
     4300000: polySurface2
     4300002: pPipe3
     4300004: door:polySurface2
@@ -2738,6 +2758,11 @@ ModelImporter:
     4300040: pasted__polySurface3
     4300042: pasted__pCylinder3
     4300044: Cylinder
+    4300046: pasted__pCylinder4
+    4300048: pPlane1
+    4300050: pPlane2
+    4300052: pPlane3
+    4300054: pPipe6
     7400000: Take 001
     9500000: //RootNode
   materials:
