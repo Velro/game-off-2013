@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\maze\BackFromMaze.js" />
      <Compile Include="Assets\Scripts\maze\LightFade.js" />
      <Compile Include="Assets\Scripts\maze\LightFade2.js" />
+     <Compile Include="Assets\Scripts\maze\MazeMusic.js" />
      <Compile Include="Assets\Scripts\maze\Move Light.js" />
      <Compile Include="Assets\Scripts\maze\PlayAudioOnHit.js" />
      <Compile Include="Assets\Scripts\maze\RebuildMaze.js" />
