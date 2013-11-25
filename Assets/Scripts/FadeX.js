@@ -6,6 +6,7 @@ var endingColor : Color;
 var distance : float = 5;
 
 function Start () {
+	player = GameObject.FindGameObjectWithTag("Player");
 	startingColor = renderer.material.color;
 	endingColor = Color(startingColor.r, startingColor.g, startingColor.b, 0.0);
 	renderer.material.color.a = 0;
