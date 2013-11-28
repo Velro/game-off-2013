@@ -22,14 +22,10 @@ function Start () {
 function Update () {
 	//pick up
 	if (Input.GetMouseButtonDown (0) == true && Vector3.Distance(transform.position, player.transform.position) < clickableDistance && Time.time - timeA > timeDelay
-			&& transform.parent != player.transform && transform.Find("pottedplant") == null && transform.Find("TableSmall") == null
+			&& transform.parent != player.transform && transform.Find("PottedPlant") == null && transform.Find("TableSmall") == null
 			&& transform.Find("wateringcan") == null && transform.Find("flower") == null && transform.Find ("emptypot") == null){
 		transform.parent = player.transform;
-		var ray : Ray;
-		ray.origin = player.transform.position;
-		ray.direction = player.transform.forward;
-		var point = ray.GetPoint(floatDist);
-		transform.position = point;
+		Move();
 		rigidbody.useGravity = false;
 		rigidbody.isKinematic = true;
 		timeA = Time.time;
@@ -44,7 +40,14 @@ function Update () {
 		transform.rotation.eulerAngles.y = yAngle;
 		transform.rotation.eulerAngles.z = zAngle;
 	}
-	if (transform.position.y < -5){  //bring the object back up if it clips through the floor
+	
+	//this resets position of the object after a teleport
+	if (transform.parent == player.transform && Vector3.Distance(transform.position, player.transform.position) > floatDist + 2){
+		Move();
+	}
+	
+	//respawn object if it clips through the floor
+	if (transform.position.y < -5){  
 		transform.position = originalPosition;
 		transform.rotation.eulerAngles = originalRotation;
 		if (transform.name == "pottedplant"){
@@ -53,8 +56,10 @@ function Update () {
 	}
 }
 
-function OnMouseDown () {
-	
-	
-	
+function Move () {
+	var ray : Ray;
+	ray.origin = player.transform.position;
+	ray.direction = player.transform.forward;
+	var point = ray.GetPoint(floatDist);
+	transform.position = point;
 }

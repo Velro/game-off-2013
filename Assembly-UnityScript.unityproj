@@ -49,7 +49,6 @@
      <Compile Include="Assets\Scripts\CheckForXDoorSwing.js" />
      <Compile Include="Assets\Scripts\FadeX.js" />
      <Compile Include="Assets\Scripts\MixMasterRickScript.js" />
-     <Compile Include="Assets\Scripts\RollCredits.js" />
      <Compile Include="Assets\Scripts\TitleFade.js" />
      <Compile Include="Assets\Scripts\character\CharacterMotor.js" />
      <Compile Include="Assets\Scripts\character\FP Controller.js" />
@@ -63,9 +62,12 @@
      <Compile Include="Assets\Scripts\maze\RebuildMaze.js" />
      <Compile Include="Assets\Scripts\maze\destroyWall.js" />
      <Compile Include="Assets\Scripts\rooms\EmptyToFilledPot.js" />
+     <Compile Include="Assets\Scripts\rooms\LoopingRoomsMusic.js" />
      <Compile Include="Assets\Scripts\rooms\OnClickMove.js" />
+     <Compile Include="Assets\Scripts\rooms\RoomDoorRenderers.js" />
      <Compile Include="Assets\Scripts\rooms\checkForCan.js" />
      <Compile Include="Assets\Scripts\rooms\tableSnap.js" />
+     <Compile Include="Assets\Scripts\tower\RollCredits.js" />
      <Compile Include="Assets\Scripts\twisted\DelayedActivate.js" />
      <Compile Include="Assets\Scripts\twisted\DeleteX.js" />
      <Compile Include="Assets\Scripts\twisted\DoorSwingA.js" />
