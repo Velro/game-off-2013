@@ -7,20 +7,19 @@ var range : float;
 var loopable : AudioClip;
 private var once : boolean = false;
 function Update (){
+	CheckDistance();
+}
+
+function CheckDistance () {
 	if (Vector3.Distance(player.transform.position, dirt.transform.position) < range){
-	transform.parent = player.transform;
-	transform.position = player.transform.position;
-	GetComponent(AudioSource).enabled = true;
+		GetComponent(AudioSource).enabled = true;
 		if(once == false){
 			Debug.Log("hit");
 			Loop();
 			once = true;		
 		}	
-	} else {
-		transform.parent = null;
 	}
 }
-
 function Loop(){
 	Debug.Log("begin wait");
 	yield WaitForSeconds (audio.clip.length);

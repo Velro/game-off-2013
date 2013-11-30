@@ -13,6 +13,10 @@ function Start () {
 }
 
 function Update () {
+	Fade();
+}
+
+function Fade (){
 	var speed = Time.deltaTime;
 	if (Vector3.Distance(player.transform.position, transform.position) < distance){
 		renderer.material.color.a += speed;

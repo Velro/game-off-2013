@@ -29,5 +29,4 @@ function OnTriggerExit (other : Collider){
 	yield WaitForSeconds(2);
 	music.transform.position = originalPosition;
 	music.GetComponent(AudioSource).enabled = false;
-	Debug.Log("exited");
 }

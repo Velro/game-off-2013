@@ -1,25 +1,44 @@
-﻿var backgroundTexture : Texture2D;
+﻿var black : Texture2D;
+var sleep : Texture2D;
+var maincredits : Texture2D;
+var additionalcredits : Texture2D;
+
 var startGUI : boolean = false;
 
+var hitTime : float;
 function OnTriggerEnter (other : Collider){
 	if (other.name == "Player"){
 		startGUI = true;
 	}
+	hitTime = Time.time;
 }
 
 function OnGUI(){
 	if (startGUI){
-		GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), backgroundTexture); //background
+		//begin horrible hacky GUI scripting
+		GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), sleep);
 		//Insantiate (sleep);
-		delay();
-		GUI.Label(Rect((Screen.width/2)-40,(Screen.height/2)-10,(Screen.width/2)+40,(Screen.height/2)+10),
-			 "Creator");
-		GUI.Label(Rect((Screen.width/2)-42,(Screen.height/2)+25,(Screen.width/2)+38,(Screen.height/2)),
-			 "James Fulop");
-		
+		if (Time.time > hitTime + 4){
+			GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), black);
+		}
+		if (Time.time > hitTime + 4.5){
+			GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), maincredits);
+		}
+		if (Time.time > hitTime + 10.5){
+			GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), black);
+		}
+		if (Time.time > hitTime + 11){
+			GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), additionalcredits);
+		}
+		if (Time.time > hitTime + 25){
+			GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), black);
+		}
 	}
 }
 
-function delay(){
-	yield WaitForSeconds (10);
+function Fade() {
+	
+}
+function Delay(delay : float){
+	yield WaitForSeconds (delay);
 }
